@@ -18,6 +18,8 @@
 	#include <Winsock2.h>
 	#pragma comment (lib, "Ws2_32.lib")
 #endif
+
+#undef CALLBACK
 #include <callback.h>
 #include <mrfCommonIO.h>
 #include <mrfBitOps.h>

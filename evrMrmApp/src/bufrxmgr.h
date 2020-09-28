@@ -12,6 +12,7 @@
 #ifndef BUFRXMGR_H_INC
 #define BUFRXMGR_H_INC
 
+#undef CALLBACK
 
 #include <ellLib.h>
 #include <callback.h>
