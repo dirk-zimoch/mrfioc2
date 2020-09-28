@@ -80,6 +80,7 @@ mrfCommon_LIBS += $(EPICS_BASE_IOC_LIBS)
 #OBJS_IOC += $(mrfCommon_SRCS)
 mrfCommon_LIBS += $(EPICS_BASE_IOC_LIBS)
 
+USR_SYS_LIBS_WIN32 += ws2_32
 USR_CXXFLAGS_WIN32 = -DNOMINMAX
 
 #---------------------
