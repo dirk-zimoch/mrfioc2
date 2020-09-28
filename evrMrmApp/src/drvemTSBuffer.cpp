@@ -6,6 +6,7 @@
 
 #include <algorithm>
 
+#define epicsExportSharedSymbols
 #include "drvem.h"
 #include "drvemTSBuffer.h"
 #include "devObj.h"

@@ -9,6 +9,7 @@
 
 #include <epicsThread.h>
 
+#define epicsExportSharedSymbols
 #include "devObj.h"
 
 const

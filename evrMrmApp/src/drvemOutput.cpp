@@ -8,7 +8,9 @@
  * Author: Michael Davidsaver <mdavidsaver@gmail.com>
  */
 
+#include <stdexcept>
 
+#define epicsExportSharedSymbols
 #include "evrRegMap.h"
 #include "drvem.h"
 
@@ -16,7 +18,6 @@
 #include <mrfCommonIO.h>
 #include <mrfBitOps.h>
 
-#include <stdexcept>
 #include "drvemOutput.h"
 
 MRMOutput::MRMOutput(const std::string& n, EVRMRM* o, OutputType t, unsigned int idx)

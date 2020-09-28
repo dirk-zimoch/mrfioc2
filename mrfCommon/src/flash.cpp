@@ -17,6 +17,7 @@
 #include <epicsThread.h>
 #include <osiSock.h>
 
+#define epicsExportSharedSymbols
 #include "mrfCommon.h"
 #include "mrf/spi.h"
 #include "mrf/flash.h"

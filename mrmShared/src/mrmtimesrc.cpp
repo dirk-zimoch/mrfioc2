@@ -22,6 +22,7 @@
 #include <epicsTime.h>
 #include <generalTimeSup.h>
 
+#define epicsExportSharedSymbols
 #include "mrfCommon.h"
 #include "mrmtimesrc.h"
 

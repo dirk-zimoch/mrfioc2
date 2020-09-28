@@ -8,9 +8,6 @@
  * Author: Michael Davidsaver <mdavidsaver@gmail.com>
  */
 
-#include "evrRegMap.h"
-#include "drvem.h"
-
 #include <stdexcept>
 #include <cstring>
 
@@ -18,10 +15,13 @@
 #include <dbDefs.h>
 #include <epicsMath.h>
 
+#define epicsExportSharedSymbols
+
+#include "evrRegMap.h"
+#include "drvem.h"
+
 #include "mrfCommonIO.h"
 #include "mrfBitOps.h"
-
-
 
 #include "drvemPulser.h"
 

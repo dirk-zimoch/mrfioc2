@@ -13,6 +13,7 @@
 #include <stringoutRecord.h>
 #include <stringinRecord.h>
 
+#define epicsExportSharedSymbols
 #include "devObj.h"
 
 using namespace mrf;

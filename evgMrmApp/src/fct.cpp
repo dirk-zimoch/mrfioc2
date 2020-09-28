@@ -6,6 +6,7 @@
 
 #include <sstream>
 
+#define epicsExportSharedSymbols
 #include "fct.h"
 #include "evgMrm.h"
 #include "sfp.h"

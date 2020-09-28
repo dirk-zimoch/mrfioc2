@@ -6,6 +6,7 @@
 
 #include <map>
 
+#define epicsExportSharedSymbols
 #include "mrfCommon.h"
 #include "mrf/spi.h"
 
