@@ -8,16 +8,16 @@
  * Author: Michael Davidsaver <mdavidsaver@gmail.com>
  */
 
+#include <stdexcept>
+#include <epicsExport.h>
 
 #include "mrf/databuf.h"
 #include <mrfCommonIO.h>
 #include "evrRegMap.h"
 
-#include <stdexcept>
 #include <evr/evr.h>
 #include <evr/prescaler.h>
 
-#include <epicsExport.h>
 #include "drvemPrescaler.h"
 
 MRMPreScaler::MRMPreScaler(const std::string& n, EVR& o,volatile unsigned char* b)

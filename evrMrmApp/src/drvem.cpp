@@ -22,6 +22,7 @@
 #include <dbDefs.h>
 #include <dbScan.h>
 #include <epicsInterrupt.h>
+#include <epicsExport.h>
 
 #include "mrmDataBufTx.h"
 #include "sfp.h"
@@ -49,7 +50,6 @@
 
 #include "drvem.h"
 
-#include <epicsExport.h>
 
 /* whether to use features introduced to support
  * parallel handling of shared callback queues.

@@ -15,11 +15,11 @@
 #include <epicsMutex.h>
 #include <errlog.h>
 
+#include <epicsExport.h>
+
 #include <mrfCommonIO.h>
 
 #include "mrmSeq.h"
-
-#include <epicsExport.h>
 
 #define  EVG_SEQ_RAM_RUNNING    0x02000000  /* Sequence RAM is Running (read only) */
 #define  EVG_SEQ_RAM_ENABLED    0x01000000  /* Sequence RAM is Enabled (read only) */
