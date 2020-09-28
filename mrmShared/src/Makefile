@@ -25,6 +25,8 @@ mrmShared_SRCS += mrmspi.cpp
 
 mrmShared_LIBS += mrfCommon $(EPICS_BASE_IOC_LIBS)
 
+USR_CXXFLAGS_WIN32 = -DNOMINMAX
+
 #---------------------
 # Generic EPICS build rules
 #

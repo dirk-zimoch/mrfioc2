@@ -47,6 +47,8 @@ evrMrm_LIBS += mrfCommon mrmShared evr epicspci epicsvme $(EPICS_BASE_IOC_LIBS)
 
 DBD += drvemSupport.dbd
 
+USR_CXXFLAGS_WIN32 = -DNOMINMAX
+
 ifneq ($(DEVIOCSTATS),)
 evrmrm_DBD += devIocStats.dbd
 evrmrm_LIBS += devIocStats

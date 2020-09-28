@@ -80,6 +80,8 @@ mrfCommon_LIBS += $(EPICS_BASE_IOC_LIBS)
 #OBJS_IOC += $(mrfCommon_SRCS)
 mrfCommon_LIBS += $(EPICS_BASE_IOC_LIBS)
 
+USR_CXXFLAGS_WIN32 = -DNOMINMAX
+
 #---------------------
 # Build the host-side utilities for creating and analyzing
 # the fractional synthesizer control words.
