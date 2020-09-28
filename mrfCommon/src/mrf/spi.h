@@ -14,6 +14,9 @@
 #include <epicsMutex.h>
 #include <shareLib.h>
 
+// Windows defines this macro!
+#undef interface
+
 namespace mrf {
 
 //! Interface for SPI Master
