@@ -358,7 +358,7 @@ static const CorrectionValStruct  CorrectionValList [NUM_CORRECTION_VALS] = {
  * @return
  *    OK if we were able to return both an event clock frequency and a fractional
  *             synthesizer control word.<br>
- *    ERROR if we could not.
+ *    -1 if we could not.
  *
  **************************************************************************************************/
 
@@ -411,7 +411,7 @@ epicsShareExtern epicsStatus mrfSetEventClockSpeed (
             DEBUGPRINT (DP_FATAL, DP_FATAL,
                    (" *Error: Unable to compute fractional synthesizer control word for %f MHz.\n",
                     InputClockSpeed));
-            return ERROR;
+            return -1;
         }/*end if could not compute fractional synthesizer control word*/
 
     }/*end if control word not specified*/
@@ -425,7 +425,7 @@ epicsShareExtern epicsStatus mrfSetEventClockSpeed (
         DEBUGPRINT (DP_FATAL, DP_FATAL,
                 (" *Error: Fractional Synthesizer control word 0x%08x is invalid.\n",
                  InputControlWord));
-        return ERROR;
+        return -1;
     }/*end if control word was invalid*/
 
    /*---------------------
@@ -448,7 +448,7 @@ epicsShareExtern epicsStatus mrfSetEventClockSpeed (
         DEBUGPRINT (DP_FATAL, DP_FATAL,
                    ("differ by %6.2f ppm.\n         Difference must be less than +/- 100 ppm.\n",
                     Error));
-        return ERROR;
+        return -1;
     }/*end if error is too large*/
 
    /*---------------------

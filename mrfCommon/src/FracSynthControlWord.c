@@ -43,7 +43,7 @@
 |*-------------------------------------------------------------------------------------------------
 |* RETURNS:
 |*      0 (OK)    if we were able to create a control word for the desired frequency.
-|*     -1 (ERROR) if we could not create a control word for the desired frequency.
+|*     -1         if we could not create a control word for the desired frequency.
 |*
 \**************************************************************************************************/
 
@@ -132,7 +132,7 @@ int main (int argc, char *argv[]) {
             */
             if (controlWord == 0) {
                 printf ("Unable to create a control word for %f MHz.\n", DesiredFreq);
-                return ERROR;
+                return -1;
             }/*end if could not create control word*/
 
            /*---------------------

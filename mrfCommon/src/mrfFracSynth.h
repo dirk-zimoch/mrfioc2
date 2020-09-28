@@ -81,13 +81,6 @@ epicsShareExtern epicsFloat64  FracSynthAnalyze      (epicsUInt32, epicsFloat64,
 #endif
 
 /*---------------------
- * Failure return code
- */
-#ifndef ERROR
-#define ERROR  (-1)
-#endif
-
-/*---------------------
  * Success, but do not perform linear conversions (ai & ao record device support routines)
  */
 #ifndef NO_CONVERT
